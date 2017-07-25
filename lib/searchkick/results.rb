@@ -53,7 +53,7 @@ module Searchkick
             end
 
             result["id"] ||= result["_id"] # needed for legacy reasons
-            Hashie::Mash.new(result)
+            HashWrapper.new(result)
           end
         end
       end
